@@ -1,0 +1,62 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>QDC - Você Ganhou</title>
+
+    <link href="estilo/css.css" rel="stylesheet" type="text/css">
+
+    <link rel="icon" href="img/icon.png" />
+
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+
+    <script src="js/jquery.js"></script>
+
+    <script>
+
+        $(document).ready(function () {
+
+            $(".menucontainer").click(function () {
+                $(".linkcontainer").slideToggle(200);
+            })
+
+        })
+    </script>
+
+</head>
+
+<body>
+
+    <div class="menucontainer">
+        <img src="img/menu.png" class="menuimg" />
+    </div>
+
+    <div class="linkcontainer">
+        <a href="sobre.html" accesskey="Z"><div class="link"><p>Sobre</p></div></a>
+        <a href="feedback.html" accesskey="X"><div class="link"><p>Feedback</p></div></a>
+    </div>
+
+    <a href="home.html" accesskey="H">
+        <div class="homecontainer">
+            <img src="img/home.png" class="home" />
+        </div>
+    </a>
+
+    <div class="container">
+        <h1 class="ganhou">VOCÊ GANHOU!</h1>
+    </div>
+
+    <div class="container">
+        <div class="acerto7">
+            <h4>Parabéns! Esperamos que você tenha adquirido bastante conhecimento com este pequeno jogo!</h4>
+        </div>
+    </div>
+
+    <img src="img/win.gif" class="imgcenter" />
+
+</body>
+</html>

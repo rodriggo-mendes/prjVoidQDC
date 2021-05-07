@@ -1,0 +1,92 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>QDC - Feedback</title>
+
+    <link href="estilo/css.css" rel="stylesheet" type="text/css">
+
+    <link rel="icon" href="img/icon.png" />
+
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+
+    <script src="js/jquery.js"></script>
+
+    <script>
+
+        $(document).ready(function () {
+
+            $(".menucontainer").click(function () {
+                $(".linkcontainer").slideToggle(200);
+            })
+
+        })
+    </script>
+
+</head>
+
+<body>
+
+    <div class="menucontainer">
+        <img src="img/menu.png" class="menuimg" />
+    </div>
+
+    <div class="linkcontainer">
+        <a href="sobre.html" accesskey="Z"><div class="link"><p>Sobre</p></div></a>
+        <a href="feedback.html" accesskey="X"><div class="link"><p>Feedback</p></div></a>
+    </div>
+
+    <a href="home.html" accesskey="H">
+        <div class="homecontainer">
+            <img src="img/home.png" class="home" />
+        </div>
+    </a>
+
+    <div class="main">
+
+        <div class="bordert2"></div>
+
+        <div class="contain3">
+            <h1>Mande-nos suas mensagens</h1>
+            <p>O feedback do público é de extrema importância para que hajam frequentes atualizações no layout das páginas, correções de bugs e adições de conteúdo devido a recomendações. Mande aqui sua experiência com o quiz, críticas e recomendações.</p>
+        </div>
+
+        <div class="contain4">
+            <img src="img/msg.gif" class="block" />
+        </div>
+
+        <form class="formy" id="form1" method="post" name="mensagem">
+            <p>Preencha o formulário</p>
+            <div class="formy1">
+                <div>
+                    <input class="formbox" type="text" name="name" placeholder="Nome" required />
+                </div>
+                <div>
+                    <input class="formbox" type="email" name="email" placeholder="Email (opcional)" />
+                </div>
+                <div>
+                    <textarea class="txtbox" name="message" placeholder="Mensagem" form="form1" required></textarea>
+                </div>
+                <div>
+                    <input class="sendbox" type="submit" name="submit" value="Enviar" accesskey="N"/>
+                </div>
+            </div>
+            <br />
+            <p>ou</p>
+            <br />
+            <div class="formy2">
+                <div>
+                    <img src="img/email.gif" width="80px" />
+                </div>
+                <p>Mande um email aos desenvolvedores</p>
+                <p><a href="mailto:hdgames588@gmail.com" accesskey="M">qdc_dev@gmail.com</a></p>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>

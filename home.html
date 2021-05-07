@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="img/icon.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed|Tauri" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Comfortaa|Raleway|Unica+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Assistant:200" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/stylesheet.css" />
+    <script src="js/jquery.js"></script>
+    <title>VOID - Página Inicial</title>
+
+    <script>
+        $(document).ready(function(){
+            $(".menu").click(function () {
+                $(".maxnavitems").slideToggle(200);
+                $(".menu").toggleClass('active');
+            });
+
+            $(".pcitem").click(function () {
+                $(".pcmenu").toggle();
+                $(".pcitem").toggleClass('navsele');
+                $(".navitems img").toggleClass('activ')
+            });
+
+            $("#arrow").click(function () {
+                $(".pcmenu").slideToggle(200);
+                $(".pcitem").toggleClass('navsele');
+                $(".navitems img").toggleClass('activ');
+            });
+        })
+    </script>
+
+</head>
+<body class="bgc">
+
+    <div class="head">
+        <div class="menu"></div>
+        <div class="logo"><a href="home.html"><img src="img/logo.jpg" class="logoimg" /></a></div>
+
+        <!-- Max width false -->
+        <div class="navitems">
+            <a href="contato.html"><li>CONTATO</li></a>
+            <a href="sobre.html"><li>SOBRE NÓS</li></a>
+            <li id="arrow"><img src="img/arrow.png" /></li>
+            <div class="pccontain">
+                <li class="pcitem">COMPUTADORES</li>
+                <div class="pcmenu">
+                    <a href="historia.html"><li>HISTÓRIA</li></a>
+                    <a href="hardware.html"><li>HARDWARE</li></a>
+                    <a href="software.html"><li>SOFTWARE</li></a>
+                    <a href="manutencao.html"><li>MANUTENÇÃO</li></a>
+                </div>
+            </div>
+            <a href="home.html"><li id="navsel">INÍCIO</li></a>
+        </div>
+
+    </div>
+
+    <!--Max width true-->
+    <div class="maxnavitems">
+        <a href="home.html"><li id="navsel">INÍCIO</li></a>
+        <p id="compli">COMPUTADORES</p>
+        <div class="pcmaxmenu">
+            <a href="historia.html"><li>HISTÓRIA</li></a>
+            <a href="hardware.html"><li>HARDWARE</li></a>
+            <a href="software.html"><li>SOFTWARE</li></a>
+            <a href="manutencao.html"><li>MANUTENÇÃO</li></a>
+        </div>
+        <a href="sobre.html"><li>SOBRE NÓS</li></a>
+        <a href="contato.html"><li>CONTATO</li></a>
+    </div>
+
+    <div class="main">
+
+        <div class="parallax">
+            <p>BEM-VINDO(A) AO VOID</p>
+        </div>
+
+        <div class="txt5">
+            <div class="txt5_1">
+                <img src="img/homehole.png" />
+            </div>
+
+            <div class="txt5_2">
+                <h1>FELIZES EM TE RECEBER!</h1>
+                <p>O Void tem um caráter educativo informativo e é dotado de diversos artigos sobre computação, desde história até manutenção. Em que podemos ajudar?</p>
+            </div>
+        </div>
+
+        <div class="parallax2">
+            <p>“Os computadores estão aqui para ficar.” <br /> —Judith Zoebelein</p>
+        </div>
+
+        <div class="txt11">
+            <h2 id="men">QUIZ</h2>
+            <p>
+                O Void apoia o QDC: Quiz do Computador. Um jeito diferente de ensinar, com interface simples mas ao mesmo tempo divertida, o QDC é um quiz de 20 perguntas (sendo 10 básicas e mais 10 avançadas) sobre computadores. Recomendamos a jogatina, e lembre-se de que o Void sempre estará aqui para sanar quaisquer dúvidas que você tiver em perguntas do quiz. <br /><br />
+                <a href="qdc/home.html" target="_blank">Ir para o QDC</a>
+            </p>
+        </div>
+
+            <div class="footer">
+                <img src="img/logof.jpg" />
+                <p>© Void Co. 2018, <a href="sobre.html">Sobre VOID</a> | <a href="Contato.html">Contato</a></p>
+            </div>
+        </div>
+
+</body>
+</html>

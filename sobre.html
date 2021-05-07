@@ -1,0 +1,152 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="img/icon.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed|Tauri" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Comfortaa|Raleway|Unica+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Assistant:200" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/stylesheet.css" />
+    <script src="js/jquery.js"></script>
+    <title>VOID - Sobre</title>
+
+    <script>
+        $(document).ready(function(){
+            $(".menu").click(function () {
+                $(".maxnavitems").slideToggle(200);
+                $(".menu").toggleClass('active');
+            });
+
+            $(".pcitem").click(function () {
+                $(".pcmenu").toggle();
+                $(".pcitem").toggleClass('navsele');
+                $(".navitems img").toggleClass('activ')
+            });
+
+            $("#arrow").click(function () {
+                $(".pcmenu").slideToggle(200);
+                $(".pcitem").toggleClass('navsele');
+                $(".navitems img").toggleClass('activ');
+            });
+        })
+    </script>
+
+</head>
+<body class="bgc">
+
+    <div class="head">
+        <div class="menu"></div>
+        <div class="logo"><a href="home.html"><img src="img/logo.jpg" class="logoimg" /></a></div>
+
+        <!-- Max width false -->
+        <div class="navitems">
+            <a href="contato.html"><li>CONTATO</li></a>
+            <a href="sobre.html"><li id="navsel">SOBRE NÓS</li></a>
+            <li id="arrow"><img src="img/arrow.png" /></li>
+            <div class="pccontain">
+                <li class="pcitem">COMPUTADORES</li>
+                <div class="pcmenu">
+                    <a href="historia.html"><li>HISTÓRIA</li></a>
+                    <a href="hardware.html"><li>HARDWARE</li></a>
+                    <a href="software.html"><li>SOFTWARE</li></a>
+                    <a href="manutencao.html"><li>MANUTENÇÃO</li></a>
+                </div>
+            </div>
+            <a href="home.html"><li>INÍCIO</li></a>
+        </div>
+
+    </div>
+
+    <!--Max width true-->
+    <div class="maxnavitems">
+        <a href="home.html"><li>INÍCIO</li></a>
+        <p id="compli">COMPUTADORES</p>
+        <div class="pcmaxmenu">
+            <a href="historia.html"><li>HISTÓRIA</li></a>
+            <a href="hardware.html"><li>HARDWARE</li></a>
+            <a href="software.html"><li>SOFTWARE</li></a>
+            <a href="manutencao.html"><li>MANUTENÇÃO</li></a>
+        </div>
+        <a href="sobre.html"><li id="navsel">SOBRE NÓS</li></a>
+        <a href="contato.html"><li>CONTATO</li></a>
+    </div>
+
+    <div class="main">
+        <div class="txt0">
+            <div class="txt0_0">
+                <img src="img/blackhole.png" class="txt0_0img" />
+            </div>
+            <div class="txt0_1">
+                <h2>O que é Void?</h2>
+                <p>Void é um website sobre manutenção de computadores e assuntos relacionados. Nosso objetivo é aumentar o conhecimento das pessoas sobre um microcomputador, dando-as informações sobre as principais características de um PC, ajudando-as a verificar e corrigir possíveis erros e, se possível, evitar futuras frustrações.</p>
+            </div>
+            <div class="txt0_2">
+                <img src="img/blackhole.png" class="txt0img" />
+            </div>
+        </div>
+
+        <div class="parallax5">
+            <p>“Quando o PC foi lançado, as pessoas sabiam que era algo importante.”<br /> —Bill Gates</p>
+        </div>
+
+        <div class="txt1">
+            <p>VOID: Pensando no seu futuro</p>
+        </div>
+
+        <div class="txt2">
+            <p>
+                Vivemos em uma sociedade altamente tecnológica, em que
+                a tendência é que isso aumente cada vez com mais
+                força. É essencial que cada um de nós saiba ao menos
+                um pouco sobre computadores, visto que muitos empregos
+                atualmente requerem um conhecimento básico sobre as
+                máquinas. Não apenas isso, mas saber sobre computadores pessoais
+                pode ocasionalmente fazer uma pessoa economizar mais dinheiro, visto que
+                pode não ser preciso chamar um técnico para resolver seus problemas.
+                O Void está disposto a lhe auxiliar.
+            </p>
+            <div class="txt2_1">
+                <img src="img/sobre1.jpg" class="txt2img" />
+                <h2>Layout prático</h2>
+                <p>Website agradável aos olhos com layout planejado para que seja fácil de se localizar</p>
+            </div>
+            <div class="txt2_2">
+                <img src="img/sobre2.jpg" class="txt2img" />
+                <h2>Entenda sua máquina</h2>
+                <p>Aprenda sobre <a href="manutencao.html">os tipos de manutenção</a>, <a href="software.html">programas</a> e <a href="hardware.html">peças do computador</a>, bem como uma <a href="historia.html">breve história da evolução dos computadores</a> com nossos artigos informativos sobre o microcomputador</p>
+            </div>
+        </div>
+
+        <div class="parallax4">
+            <p>"No futuro, software e tecnologia irão permitir que as pessoas aprendam muito com seus colegas.” <br /> —Mark Zuckerberg</p>
+        </div>
+
+        <div class="txt3">
+            <h4>Mais sobre a criação do site</h4>
+            <h3>O Void surgiu a partir de um projeto escolar requirido para obtenção de nota. Todo o design, organização de ideias e desenvolvimento prático foram feitos por uma e única pessoa. A logomarca não foi produzida pelo desenvolvedor do website, e todos os direitos são reservados ao usuário 'chrystian' da rede de templates <a href="https://themeforest.net/?utm_source=envatocom&utm_medium=promos&utm_campaign=market_envatocom_selector&utm_content=env_selector" target="_blank">Envato Market</a> da <a href="https://envato.com/" target="_blank">Envato</a>.</h3>
+
+            <div class="dev">
+                <img src="img/developer.jpg" class="devimg" />
+                <p>Rodriggo Mendes</p>
+                <h5>Desenvolvedor Geral</h5>
+            </div>
+            <div class="devabt">
+                <h2>Sobre mim</h2>
+                <p>
+                    16 anos, estudante da ETEC Aristóteles Ferreira em Santos, SP, cursando o 1º ano do Ensino Médio, integrado ao Ensino Técnico de Informática<br />
+                    <h2>Dê-me feedback!</h2>
+                <p>Email para contato: <a href="mailto:hdgames588@gmail.com">hdgames588@gmail.com</a></p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <img src="img/logof.jpg" />
+            <p>© Void Co. 2018, <a href="sobre.html">Sobre VOID</a> | <a href="Contato.html">Contato</a></p>
+        </div>
+    </div>
+
+</body>
+</html>

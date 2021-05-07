@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="img/icon.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed|Tauri" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Comfortaa|Raleway|Unica+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Assistant:200" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/stylesheet.css" />
+    <script src="js/jquery.js"></script>
+    <title>VOID - Contato</title>
+
+    <script>
+        $(document).ready(function(){
+            $(".menu").click(function () {
+                $(".maxnavitems").slideToggle(200);
+                $(".menu").toggleClass('active');
+            });
+
+            $(".pcitem").click(function () {
+                $(".pcmenu").toggle();
+                $(".pcitem").toggleClass('navsele');
+                $(".navitems img").toggleClass('activ')
+            });
+
+            $("#arrow").click(function () {
+                $(".pcmenu").slideToggle(200);
+                $(".pcitem").toggleClass('navsele');
+                $(".navitems img").toggleClass('activ')
+            });
+        })
+    </script>
+
+</head>
+<body class="bgc">
+
+    <div class="head">
+        <div class="menu"></div>
+        <div class="logo"><a href="home.html"><img src="img/logo.jpg" class="logoimg" /></a></div>
+
+        <!-- Max width false -->
+        <div class="navitems">
+            <a href="contato.html"><li id="navsel">CONTATO</li></a>
+            <a href="sobre.html"><li>SOBRE NÓS</li></a>
+            <li id="arrow"><img src="img/arrow.png" /></li>
+            <div class="pccontain">
+                <li class="pcitem">COMPUTADORES</li>
+                <div class="pcmenu">
+                    <a href="historia.html"><li>HISTÓRIA</li></a>
+                    <a href="hardware.html"><li>HARDWARE</li></a>
+                    <a href="software.html"><li>SOFTWARE</li></a>
+                    <a href="manutencao.html"><li>MANUTENÇÃO</li></a>
+                </div>
+            </div>
+            <a href="home.html"><li>INÍCIO</li></a>
+        </div>
+    </div>
+
+    <!--Max width true-->
+    <div class="maxnavitems">
+        <a href="home.html"><li>INÍCIO</li></a>
+        <p id="compli">COMPUTADORES</p>
+        <div class="pcmaxmenu">
+            <a href="historia.html"><li>HISTÓRIA</li></a>
+            <a href="hardware.html"><li>HARDWARE</li></a>
+            <a href="software.html"><li>SOFTWARE</li></a>
+            <a href="manutencao.html"><li>MANUTENÇÃO</li></a>
+        </div>
+        <a href="sobre.html"><li>SOBRE NÓS</li></a>
+        <a href="contato.html"><li id="navsel">CONTATO</li></a>
+    </div>
+
+    <div class="main">
+        <div class="txt4">
+            <h1>Envie-nos um feedback para que mantenhamos o site sempre bem construído e livre de erros</h1>
+            <p>O feedback do público é importante para a realização de manutenções no layout para que todos tenham uma boa experiência com o website. Mande-nos suas experiências com o site, dúvidas, recomendações e reclamações aqui.</p>
+        </div>
+
+        <div class="parallax3">
+            <div class="txt4_1">
+                <form class="formy" id="form1" method="post" name="mensagem">
+                    <p>Preencha o formulário</p>
+                    <div class="formy1">
+                        <div>
+                            <input class="formbox" type="text" name="name" placeholder="Nome" required />
+                        </div>
+                        <div>
+                            <input class="formbox" type="email" name="email" placeholder="Email (opcional)" />
+                        </div>
+                        <div>
+                            <textarea class="txtbox" name="message" placeholder="Mensagem" form="form1" required></textarea>
+                        </div>
+                        <div>
+                            <input class="sendbox" type="submit" name="submit" value="Enviar" />
+                        </div>
+                    </div>
+                    <br />
+                    <p>ou</p>
+                    <br />
+                    <div class="formy2">
+                        <div class="contdev">
+                            <img src="img/email.png" width="30px" />
+                        </div>
+                        <p>Mande um email ao desenvolvedor</p>
+                        <p><a href="mailto:hdgames588@gmail.com">hdgames588@gmail.com</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer">
+            <img src="img/logof.jpg" />
+            <p>© Void Co. 2018, <a href="sobre.html">Sobre VOID</a> | <a href="Contato.html">Contato</a></p>
+        </div>
+    </div>
+
+</body>
+</html>

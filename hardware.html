@@ -1,0 +1,310 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="img/icon.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed|Tauri" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Comfortaa|Raleway|Unica+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Assistant:200" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/stylesheet.css" />
+    <script src="js/jquery.js"></script>
+    <title>VOID - Hardware</title>
+
+    <script>
+        $(document).ready(function(){
+            $(".menu").click(function () {
+                $(".maxnavitems").slideToggle(200);
+                $(".menu").toggleClass('active');
+            });
+
+            $(".pcitem").click(function () {
+                $(".pcmenu").toggle();
+                $(".pcitem").toggleClass('navsele');
+                $(".navitems img").toggleClass('activ')
+            });
+
+            $("#arrow").click(function () {
+                $(".pcmenu").slideToggle(200);
+                $(".pcitem").toggleClass('navsele');
+                $(".navitems img").toggleClass('activ');
+            });
+        })
+    </script>
+
+</head>
+<body class="bgc">
+
+    <div class="head">
+        <div class="menu"></div>
+        <div class="logo"><a href="home.html"><img src="img/logo.jpg" class="logoimg" /></a></div>
+
+        <!-- Max width false -->
+        <div class="navitems">
+            <a href="contato.html"><li>CONTATO</li></a>
+            <a href="sobre.html"><li>SOBRE NÓS</li></a>
+            <li id="arrow"><img src="img/arrow.png" /></li>
+            <div class="pccontain">
+                <li class="pcitem" id="navsel">COMPUTADORES</li>
+                <div class="pcmenu">
+                    <a href="historia.html"><li>HISTÓRIA</li></a>
+                    <a href="hardware.html"><li id="navsel">HARDWARE</li></a>
+                    <a href="software.html"><li>SOFTWARE</li></a>
+                    <a href="manutencao.html"><li>MANUTENÇÃO</li></a>
+                </div>
+            </div>
+            <a href="home.html"><li>INÍCIO</li></a>
+        </div>
+
+    </div>
+
+    <!--Max width true-->
+    <div class="maxnavitems">
+        <a href="home.html"><li>INÍCIO</li></a>
+        <p id="compli">COMPUTADORES</p>
+        <div class="pcmaxmenu">
+            <a href="historia.html"><li>HISTÓRIA</li></a>
+            <a href="hardware.html"><li id="navsel">HARDWARE</li></a>
+            <a href="software.html"><li>SOFTWARE</li></a>
+            <a href="manutencao.html"><li>MANUTENÇÃO</li></a>
+        </div>
+        <a href="sobre.html"><li>SOBRE NÓS</li></a>
+        <a href="contato.html"><li>CONTATO</li></a>
+    </div>
+
+    <a name="topohdw"></a>
+    <div class="main">
+        <div class="parallax8">
+            <p>HARDWARE</p>
+        </div>
+
+        <div class="txt11">
+            <h2>O QUE É?</h2>
+            <p>
+                Hardware são as partes que podemos ver e tocar do computador, ou seja, todos os componentes da sua estrutura física. São, essencialmente: <a href="#placa">placa mãe</a>, <a href="#processador">processador</a>, <a href="#pvideo">placa de vídeo</a>,
+                <a href="#hd">HD</a> (disco rígido) <a href="#hd">ou SSD</a>, <a href="#ram">memória RAM</a>, <a href="#rom">memória ROM</a>, <a href="#cooler">cooler</a>, <a href="#fonte">fonte de alimentação</a> e <a href="#gabinete">gabinete</a> (para PCs — computadores pessoais).
+            </p>
+            <br />
+
+            <h2>PERIFÉRICOS</h2>
+            <p>
+                Dispositivos como pen-drives, fones de ouvido e outros se chamam periféricos. Os periféricos são definidos como aparelhos que enviam e recebem informações de um computador.
+                Esses, sejam para receber ou enviar informações, estão todos ligados ao <a href="#processador">CPU</a> (Unidade Central de Processamento, ou apenas processador) do computador. Portanto, tudo aquilo
+                que se liga a um computador é um periférico. Existem alguns tipos de periféricos, são:
+            </p>
+
+            <h1>De Entrada</h1>
+            <p>
+                Envia informação para o computador. <br />
+                Exemplos: teclado, mouse, joystick (controle para consoles), digitalizadora.
+            </p>
+
+            <h1>De Saída</h1>
+            <p>
+                Transmitem informação do computador para o utilizador (usuário). <br />
+                Exemplos: monitor, impressora, caixa de som.
+            </p>
+
+            <h1>De Entrada ou Saída (ou Mistos)</h1>
+            <p>
+                Enviam/recebem informação para/do computador. <br />
+                Exemplos: monitor touchscreen, drive de DVD, modem, headset (fone e microfone).
+            </p>
+
+            <h1>De Armazenamento</h1>
+            <p>
+                Armazenam informações do computador e para o mesmo.  <br />
+                Exemplos: pen-drive, cartão de memória.
+            </p>
+            </p>
+        </div>
+
+        <div class="parallax9">
+            <p>PEÇAS</p>
+        </div>
+
+        <div class="txt12">
+            <a name="placa"></a>
+            <h1>PLACA MÃE</h1>
+            <img src="img/placa.jpeg" class="placa" />
+            <p>
+                É na placa mãe que são conectados todos os componentes do PC, e pode ser comparada como o "coração" do PC. Ela é responsável por interligar o processador com a <a href="#ram">memória RAM</a>, com o <a href="#hd">HD</a>, a <a href="#pvideo">placa de vídeo</a>, etc. Existem vários
+                tipos de placa mãe. Algumas suportam determinadas peças, outras não. Cada uma tem suas características, como o tipo de soquete (lugar onde se encaixa o <a href="#processador">processador</a>), o chipset
+                (responsável pela troca de informações dos componentes), as formas de conexões, entre outras.
+            </p>
+        </div>
+
+        <div class="txt12">
+            <a name="processador"></a>
+            <h1>PROCESSADOR</h1>
+            <img src="img/processador.jpg" class="placa" />
+            <p>
+                O microprocessador, ou simplesmente processador, e ainda CPU (Unidade Central de Processamento) é quem faz o trabalho pesado das coisas. Ele opera com números e símbolos representados no sistema binário. Tudo o que o computador
+                vai fazer passa pelo processador. Ele é o "cérebro" da máquina. <br /><br />
+                A frequência de processamento (velocidade, clock), medido em hertz (geralmente Gigahertz), define a capacidade do processador em processar informações ao mesmo tempo. O core é o núcleo do processador.
+                Existem processadores core e multicore, ou seja, processadores com um núcleo e com vários núcleos na mesma peça. Logo, um processador dual core, por exemplo, possui dois núcleos. A memória Cache é um tipo de memória auxiliar,
+                que serve para aumentar a velocidade no acesso aos dados e instruções armazenados na <a href="#ram">memória RAM</a>. A potência, medida em Watts, é a quantia de energia que é consumida por segundo: 1W = 1 J/s (Joule por segundo).
+            </p>
+        </div>
+
+        <div class="txt12">
+            <a name="pvideo"></a>
+            <h1>PLACA DE VÍDEO</h1>
+            <img src="img/pvideo.jpg" class="placa" />
+            <a name="onb"></a>
+            <p>
+                A placa de vídeo é responsável por enviar sinais do computador para o monitor, melhorando as imagens. É categorizada em duas: on-board e off-board.
+                <br /><br />
+                A placa on-board é integrada fixamente na <a href="#placa">placa mãe</a>, impossibilitando uma futura (e desejável) troca — a não ser que a placa mãe seja substituída. Não tem uma memória dedicada, e por isso acaba utilizando a <a href="#ram">memória RAM</a>. Este método deixa o seu sistema mais lento. A capacidade dessa placa é limitada.
+                <br /><br />
+                Já as placas off-board possuem memória própria, com sua capacidade sempre medida em bytes. Geram imagens e efeitos visuais tridimensionais, e aceleram os bidimensionais, aliviando o trabalho do <a href="#processador">processador</a> principal e gerando um resultado final melhor e mais rápido. Em games, por exemplo, quanto melhor a placa, mais definições de efeitos serão vistos, e mais rápido o jogo irá rodar. A maioria dos jogos modernos exige placas super potentes.
+            </p>
+        </div>
+
+        <div class="txt12">
+            <a name="hd"></a>
+            <h1>HD e SSD</h1>
+            <img src="img/hdssd.jpg" class="placa" />
+            <p>
+                No disco rígido (HD), ou winchester (termo que caiu em desuso há muito tempo), estão armazenadas todas as informações e programas de um computador. Ele é, normalmente, o principal meio de armazenamento de um PC. Arquivos de qualquer formato que forem salvos serão guardados nele. A denominação HD (hard disk) se dá porque ele tem o formato de um CD onde são gravadas informações a laser. Ele tem uma memória não-volátil, ou seja, os arquivos não são perdidos quando o computador é desligado, sendo considerado o principal meio de armazenamento de dados em massa.
+                <br /><br />
+                Já o SSD (Solid Slate Drive, ou Drive em Estado Sólido) é bem mais caro e possui uma capacidade de armazenamento bem inferior a de um HD — por ser uma tecnologia relativamente nova, seus modelos são limitados a até 256GB, geralmente, enquanto HDs de 1, ou até mesmo 2TB (terabytes) são muito comuns. Entretanto, o SSD tem suas vantagens. <br /><br />Em um disco rígido convencional, a velocidade de transferência é a soma do tempo em que a cabeça de leitura (agulha de leitura) demora pra alcançar a parte do disco onde o arquivo está armazenado mais o tempo que esse arquivo demora para ser copiado para a memória. O SSD, por ser um tipo de memória flash (a mesma usada em pendrives), tem acesso quase instantâneo
+                a qualquer parte do chip, não importando muito se o arquivo está fragmentado ou não. E, também, por não possuir agulha de leitura, não há ruídos com o uso de um SSD. Ainda, para quem usa laptop, há algumas vantagens adicionais, como o seu menor consumo de energia, que aumenta a autonomia da bateria, e a sua resistência a vibrações e chacoalhos pela ausência de partes móveis (devido ao sistema totalmente eletrônico do SSD).
+            </p>
+        </div>
+
+        <div class="txt12">
+            <a name="ram"></a>
+            <h1>MEMÓRIA RAM</h1>
+            <img src="img/ram.jpg" class="placa" />
+            <p>
+                A memória RAM (Random Access Memory, ou Memória de Acesso Aleatório) é uma memória primária (que o <a href="#processador">processador</a> acessa diretamente) volátil, ou seja, os arquivos são apagados após
+                deixar de ser energizada, na reinicialização do micro. É onde o processador busca dados e programas para executar. Existem dois tipos de memória RAM:
+            </p>
+            <h2>DRAM (Dynamic Random Access Memory)</h2>
+            <p>
+                É o tipo dinâmico. O acesso às
+                informações costuma ser mais lento que nas memórias estáticas. Em
+                compensação tem preços bem menores que as memórias do tipo estático,
+                pois utiliza uma tecnologia mais simples.
+            </p>
+            <h2>SRAM (Static Random Access Memory)</h2>
+            <p>
+                É o tipo estático. São muito mais
+                rápidas que as memórias DRAM, porém armazenam menor quantidade de
+                dados.
+            </p>
+            <p>
+                As memória RAM possuem, também, diferentes tipos de tecnologia: DDR, DDR2, DDR3 e, recentemente, DDR4. Uma RAM DDR-400, funciona internamente a 200
+                MHz (MegaHertz), mas oferece 400 MHz por trabalhar com duas operações por ciclo (2 x 200). Um pente DDR2-800, por sua vez, pode oferecer 800 MHz, já
+                que faz uso de quatro operações por vez (4 x 200). O DDR3-1600, então, por utilizar 8 operações por ciclo de clock, pode oferecer 1.600 MHz (8 x 200).
+                O padrão DDR4, apesar de oferecer também 1.600 MHz, é consideravelmente melhor, possuindo mais pinos para a realizar a alimentação das micropeças e a comunicação,
+                além do alterado posicionamento de chips e tensão de alimentação. A estrutura de encaixe dos pentes é diferente de acordo com sua tecnologia, e por isso, antes de trocar uma
+                RAM, é preciso ver a compatibilidade da placa mãe com certo tipo de módulo.
+            </p>
+        </div>
+
+        <div class="txt12">
+            <a name="rom"></a>
+            <h1>MEMÓRIA ROM</h1>
+            <img src="img/rom.jpg" class="placa" />
+            <p>
+                A sigla ROM vem da expressão em inglês Read Only Memory (Memória Apenas de Leitura). Não permite a alteração ou remoção dos dados nela
+                gravados, os quais são impressos em uma única ocasião, e não é volátil. Há três tipos de memória ROM:
+            </p>
+            <h2>PROM (Programable Read Only Memory)</h2>
+            <p>
+                É a "memória programável apenas de leitura", uma das primeiras ROM da história, e aceita apenas uma única gravação. É um circuito eletrônico que armazena dados por meio de
+                um conjunto de fusíveis, e para queimar uma PROM, utiliza-se um dispositivo chamado programador.
+            </p>
+            <h2>EPROM (Erasable Programmable Read Only Memory)</h2>
+            <p>
+                "Erasable" vem do inglês "apagável", o que indica que a memória pode ser apagada e regravada. O processo de gravação e leitura é feito através de uma
+                carga elétrica. Para limpar a memória, aplica-se um feixe de raio ultravioleta sobre a área onde o chip fica aparente, protegido por uma lente de cristal.
+                Eram utilizados para armazenar o programa BIOS.
+            </p>
+            <h2>EEPROM (Eletrical Erasabel Programmable Read Only Memory)</h2>
+            <p>
+                É a "memória somente de leitura, programável e apagável eletricamente". Pode-se apagar parte da memória e gravar novamente sem problemas.
+                Para gravar, aplica-se uma carga elétrica no circuito da célula de memória ou em um grupo de células de memória, em vez de luz ultravioleta.
+                Não necessita de um aparelho programador.
+            </p>
+            <br />
+            <p>Além disso, há os encapsulamentos das memórias:</p>
+            <h2>DIP (Dual In-line Package)</h2>
+            <p>Um dos primeiros tipos de encapsulamento usados em memórias, sendo especialmente popular nas épocas dos computadores XT e 286. Como possui terminais de contacto – “perninhas” – de grande espessura, seu encaixe ou mesmo sua colagem através de solda em placas pode ser feita facilmente de forma manual. Este encapsulamento também é muito comum em chips de memória ROM usados nas placas mãe, porém atualmente caindo em desuso.</p>
+            <h2>SOJ (Small Outline J–Lead)</h2>
+            <p>Esse encapsulamento recebe este nome porque seus terminais de contato lembram a letra ‘J’. Foi bastante utilizado em módulos SIMM (Single In-line Memory Module, é um tipo de módulo de memória contendo RAM usada em computadores do início da década de 1980 até fins da década de 1990) e a sua forma de fixação em placas é feita através de solda, não requerendo furos na superfície do dispositivo.</p>
+            <h2>TSOP (Thin Small Outline Package)</h2>
+            <p>Tipo de encapsulamento cuja espessura é bastante reduzida em relação aos padrões citados anteriormente (cerca de 1/3 menor que o SOJ). Por conta disso, seus terminais de contacto são menores, além de mais finos, diminuindo a incidência de interferência na comunicação. Foi usado pela primeira vez em cartões de memória para notebooks. É um tipo aplicado em módulos de memória SDRAM e DDR. Há uma variação desse encapsulamento chamado STSOP (Shrink Thin Small Outline Package) que é ainda mais fino.</p>
+            <h2>CSP (Chip Scale Package)</h2>
+            <p>Mais recente, o encapsulamento CSP destaca-se por ser “fino” e por não utilizar pinos de contacto que lembram as tradicionais “perninhas”. Em vez disso, utiliza um tipo de encaixe chamado BGA (Ball Grid Array). Esse tipo é utilizado em módulos como DDR2 e DDR3.</p>
+        </div>
+
+        <div class="txt12">
+            <a name="cooler"></a>
+            <h1>COOLER</h1>
+            <img src="img/cooler.jpg" class="placa" />
+            <p>
+                O <a href="#processador">processador</a> realiza milhões de cálculos por segundo. A atividade interna nele só é possível graças à energia elétrica que transita de um lado para o outro. Acontece que essa grande
+                carga de trabalho gera calor, visto que os materiais oferecem resistência à passagem de corrente. Consequentemente, os processadores aquecem muito quando estão efetuando tarefas.
+                Para evitar a queima ou possíveis danos ao componente, é preciso resfriá-lo. Esta é a função do cooler (significa “refrigerador”). <br /><br />
+                Uma solução de arrefecimento
+                é necessária para manter a temperatura do processador em um nível aceitável, garantindo o bom desempenho durante o processamento de dados. Quase todos os
+                computadores contam com pelo menos dois coolers: um deles serve para resfriar o processador e outro para remover o calor da <a href="#fonte">fonte de alimentação</a>. Algumas máquinas, ainda, contam
+                com diversos refrigeradores. Eles são utilizados para resfriar <a href="#pvideo">placas de vídeo</a>, <a href="#hd">discos rígidos</a> e outros componentes.
+            </p>
+        </div>
+
+        <div class="txt12">
+            <a name="fonte"></a>
+            <h1>FONTE DE ALIMENTAÇÃO</h1>
+            <img src="img/fonte.jpg" class="placa" />
+            <p>
+                A fonte de energia do computador ou, em inglês, PSU (Power Supply Unit — Unidade de Alimentação de Energia), é responsável por converter a voltagem da energia elétrica,
+                que chega pelas tomadas, em voltagens menores, capazes de ser suportadas pelos componentes do computador. Essa peça gera valores que variam entre 12, 5 e 3,3 volts.
+                Existem dois tipos de fontes, porém atualmente apenas uma delas (a ATX) é usada:
+            </p>
+            <h2>Fonte AT</h2>
+            <p>
+                Nas fontes AT, que são as antigas, o conector que era plugado à placa-mãe era dividido em dois, chamados de P8 e P9. Este tipo de fonte exigia um certo cuidado do técnico que fosse montar um micro,
+                pois tanto os fios pretos do conector P8 quanto do conector P9 deveria ficar no centro, caso contrário, seria ocasionada a queima da <a href="#placa">placa mãe</a> ou da fonte.
+                Outro ponto desfavorável é que com essas fontes a máquina não desligava sozinha, e o usuário tinha que segurar o botão on/off para o desligamento.
+            </p>
+            <h2>Fonte ATX</h2>
+            <p>
+                Padrão mais recente. Usa conector de 20 ou 24 pinos. Tem novas funções, entre elas o mais importante: Soft On/Off - usado para ligar/desligar a fonte por <a href="software.html">software</a>. É graças a esse recurso que
+                o <a href="software.html#so">sistema operacional</a> consegue encerrar as atividades do computador sem que o usuário tenha que apertar o botão do <a href="#gabinete">gabinete</a>. Além disso, não há uma preocupação na hora de plugar o conector à
+                placa, pois o conector é único e o mesmo possui chanfros que impedem o técnico de plugar este conector de forma invertida ou de lado errado na placa mãe, evitando muitos problemas indesejáveis.
+            </p>
+        </div>
+
+        <div class="txt12">
+            <a name="gabinete"></a>
+            <h1>GABINETE</h1>
+            <img src="img/gabinete.jpg" class="placa" />
+            <p>
+                O gabinete é a “casa” de todas as peças descritas anteriormente. Também chamado de torre, ele possui diversos modelos, que dependem da necessidade de cada um. Alguns
+                possuem melhor ventilação, fornecem mais espaço, têm um design mais moderno, etc. É uma caixa metálica (ou com elementos de plástico) e possui locais de encaixe para as placas
+                e uma  <a href="#fonte">unidade de fonte elétrica</a> (fonte de alimentação). <br /><br />
+                Dentro do gabinete são instaladas as placas, que são grupos de circuitos eletrônicos que servem para comandar o microcomputador e seus periféricos.
+                As principais placas já vêm instaladas quando se compra o microcomputador, mas outras podem ser instaladas, para melhorar o desempenho, tais como <a href="#pvideo">placa aceleradora de vídeo</a> ou placa de som.
+            </p>
+        </div>
+
+        <br /><br />
+        <a href="#topohdw">
+            <img src="img/topo.png" class="topo" />
+        </a>
+
+        <div class="footer">
+            <img src="img/logof.jpg" />
+            <p>© Void Co. 2018, <a href="sobre.html">Sobre VOID</a> | <a href="Contato.html">Contato</a></p>
+        </div>
+    </div>
+
+
+</body>
+</html>

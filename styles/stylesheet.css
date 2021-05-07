@@ -1,0 +1,1864 @@
+﻿body, html {
+    margin: 0;
+    height: 100%;
+}
+
+.bgc {
+    background: #171717;
+}
+
+.head {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    background: #0E0E0E;
+    border-bottom: solid 1px #545454;
+    box-shadow: #080808 0px 0px 15px 0px;
+}
+
+.menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 25px;
+    height: 25px;
+    padding: 12px;
+    background-image: url(../img/menu.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.menuimg {
+    width: 25px;
+    height: 25px;
+}
+
+.pccontain {
+    float: right;
+    width: 180px;
+}
+
+.pcitem:hover {
+    color: #F9EFFF;
+    cursor: pointer;
+}
+
+.pcmenu {
+    position: fixed;
+    margin-top: 55px;
+    background: #171717;
+    display:none;
+    width: 174px;
+    height: 235px;
+    padding-left: 5px;
+    box-shadow: #080808 2px 1px 10px 0px;
+}
+
+.pcmenu a {
+    text-decoration:none;
+}
+
+.pcmenu li {
+    position: relative;
+    left: 30px;
+    padding-right: 44px;
+    padding-left: 6px;
+    clear:both;
+    width: 120px;
+    letter-spacing: 4px;
+    font-weight: lighter;
+    padding-top: 5px;
+    height: 30px;
+    list-style: none;
+    font-family: 'Comfortaa', cursive;
+    color: #F9EFFF;
+    font-size: 11px;
+    transition: 0.15s;
+}
+
+.pcmenu li:hover {
+    color: #EE87B3;
+    transition: 0.15s;
+    background: #1E1E1E;
+    border-left: solid 3px #EE87B3;
+}
+
+.pcmaxmenu {
+    margin-top: 8px;
+    padding-bottom: 13px;
+    border-top: solid 1px #545454;
+    border-bottom: solid 1px #545454;
+    background: #171717;
+    width: 90%;
+    height: auto;
+    margin-left: 10%;
+}
+
+.pcmaxmenu li {
+    letter-spacing: 4px;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-left: 15px;
+    height: 30px;
+    margin-left: 12px;
+    margin-top: 5px;
+    list-style: none;
+    font-family: 'Comfortaa', cursive;
+    color: #F9EFFF;
+    font-size: 13px;
+    transition: 0.15s;
+}
+
+.pcmaxmenu li:hover {
+    color: #EE87B3;
+    transition: 0.15s;
+    background: #1E1E1E;
+    border-left: solid 3px #EE87B3;
+}
+
+#arrow {
+    margin-top: 18px;
+    margin-left: -25px;
+}
+
+.navitems img {    
+    height: 8px;   
+}
+
+.navitems img.activ {
+    animation: rotate 0s forwards;
+}
+
+@keyframes rotate {
+    from {}
+    to{
+        transform: rotate(180deg);
+    }
+}
+
+#compli {
+    letter-spacing: 4px;
+    font-weight: bold;
+    padding-top: 13px;
+    padding-left: 15px;
+    height: 30px;
+    margin-left: 12px;
+    margin-top: 20px;
+    list-style: none;
+    font-family: 'Comfortaa', cursive;
+    font-size: 13px;
+    color: #9D9D9D;
+}
+
+.logo {
+    margin-left: 20px;
+    float: left;
+    width: 120px;
+}
+
+.logoimg {
+    padding-top: 2px;
+    height: 44px;
+}
+
+.navitems {
+    float: right;
+    text-decoration: none;
+    margin-right: 0px;
+}
+
+#navsel {
+    color: #EE87B3;
+}
+
+.navsele {
+    color: #EE87B3 !important;
+}
+
+.navitems li {
+    letter-spacing: 3px;
+    float: right;
+    margin-right: 30px;
+    margin-top: 20px;
+    list-style: none;
+    font-family: 'Comfortaa', cursive;
+    font-weight: lighter;
+    font-stretch: ultra-expanded;
+    color: #F9EFFF;
+    font-size: 12px;
+    transition: 0.15s;
+}
+
+.navitems li:hover {
+    color: #EE87B3;
+    transition: 0.15s;
+}
+
+.maxnavitems {
+    overflow-y: auto;
+    background: #171717;
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 50px;
+    width: 100%;
+    height: 87%;
+    border-bottom: solid 1px #545454;
+    padding-bottom: 18px;
+    box-shadow: #080808 0px 0px 15px 0px;
+}
+
+.maxnavitems a {
+    text-decoration: none;
+}
+
+.maxnavitems li {
+    letter-spacing: 3px;
+    font-weight: bold;
+    padding-top: 13px;
+    padding-left: 15px;
+    height: 30px;
+    margin-left: 12px;
+    margin-top: 20px;
+    list-style: none;
+    font-family: 'Comfortaa', cursive;
+    font-weight: lighter;
+    font-stretch: ultra-expanded;
+    color: #F9EFFF;
+    font-size: 12px;
+    transition: 0.15s;
+}
+
+.maxnavitems li:hover {
+    color: #EE87B3;
+    transition: 0.15s;
+    background: #1E1E1E;
+    border-left: solid 3px #EE87B3;
+}
+
+#maxnavsel {
+    color: #EE87B3;
+}
+
+.main {
+    margin-top: 50px;
+}
+
+.txt0 {
+    width: 95%;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+}
+
+.txt0_0 {
+    display: none;
+    width: 100%;
+    height: 50px;
+}
+
+.txt0_0img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
+.txt0_1 {
+    float: left;
+    width: 70%;
+}
+
+.txt0_1 h2 {
+    line-height: 80px;
+    font-weight: lighter;
+    margin-top: 20px;
+    font-size: 55px;
+    font-family: 'Comfortaa', cursive;
+    background: -webkit-linear-gradient(#D475D5, #FFD6E3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.txt0_1 p {
+    color: #FDF9FF;
+    font-family: 'Assistant', sans-serif;
+    font-size: 28px;
+    margin-bottom: 80px;
+}
+
+.txt0_2 {
+    float: right;
+    width: 30%;
+}
+
+.txt0img {
+    padding-top: 30px;
+    max-width: 100%;
+    height: auto;
+}
+
+.parallax {
+    background-image: url(../img/galaxy.jpg);
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.txt1 {
+    clear: both;
+    margin: 0;
+    padding: 0;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 60px;
+    width: 95%;
+}
+
+.txt1 p {
+    padding-top: 10px;
+    width: 100%;
+    margin-top: 20px;
+    font-size: 55px;
+    font-family: 'Comfortaa', cursive;
+    background: -webkit-linear-gradient(#D475D5, #FFD6E3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.txt2 {
+    margin-top: -14px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    height: auto;
+}
+
+.txt2 p {
+    color: #FDF9FF;
+    font-family: 'Assistant', sans-serif;
+    font-size: 28px;
+    margin-bottom: 80px;
+}
+
+.txt2img {
+    max-width:100%;
+    height: auto;
+}
+
+.txt2_1 {
+    float: left;
+    width: 48%;
+}
+
+.txt2_1 h2 {
+    letter-spacing: 2px;
+    padding-top: 10px;
+    border-top: solid 2px #545454;
+    width: 189px;
+    font-family: 'Assistant', sans-serif;
+    font-size: 28px;
+    font-weight: lighter;
+    color: white;
+}
+
+.txt2_1 p {
+    font-family: 'Assistant', sans-serif;
+    font-size: 20px;
+    font-weight: lighter;
+    color: #FEFBFF;
+}
+
+.txt2_2 {
+    float: right;
+    width: 48%;
+}
+
+.txt2_2 h2 {
+    letter-spacing: 2px;
+    padding-top: 10px;
+    border-top: solid 2px #545454;
+    width: 284px;
+    font-family: 'Assistant', sans-serif;
+    font-size: 28px;
+    font-weight: lighter;
+    color: white;
+}
+
+.txt2_2 p {
+    font-family: 'Assistant', sans-serif;
+    font-size: 20px;
+    font-weight: lighter;
+    color: #FEFBFF;
+}
+
+.txt2_2 a {
+    text-decoration: none;
+    color: #EE87B3;
+}
+
+.txt2_2 a:hover {
+    color: #FACBDF;
+    text-decoration: underline;
+}
+
+.txt3 {
+    clear: both;
+    width: 95%;
+    height: auto;
+    padding: 0;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.txt3 h4 {
+    line-height: 84px;
+    font-weight: lighter;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    padding-bottom: 10px;
+    font-size: 60px;
+    font-family: 'Comfortaa', cursive;
+    background: -webkit-linear-gradient(#D475D5, #FFD6E3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.txt3 h5 {
+    margin-top: -22px;
+    color: #898084;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    text-align: center;
+    font-weight: lighter;
+}
+
+.txt3 h3 {
+    margin-top: -35px;
+    padding-bottom: 15px;
+    color: #FDF9FF;
+    font-family: 'Assistant', sans-serif;
+    font-size: 28px;
+    text-align: left;
+    font-weight: lighter;
+}
+
+.dev {
+    float: left;
+    padding-top: 20px;
+    width: 50%;
+    padding-bottom: 35px;
+}
+
+.devimg {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 220px;
+    height: 220px;
+    border-radius: 200px;
+}
+
+.txt3 p {
+    font-family: 'Assistant', sans-serif;
+    text-align: center;
+    color: #FDF9FF;
+    font-size: 25px;
+    margin-top: 2px;
+}
+
+.txt3 a {
+    text-decoration: none;
+    color: #EE87B3;
+}
+
+.txt3 a:hover {
+    color: #FACBDF;
+    text-decoration: underline;
+}
+
+.devabt {
+    margin-right: 50px;
+    padding-bottom: 35px;
+    float: right;
+    width: 40%;
+}
+
+.devabt h2 {
+    letter-spacing: 2px;
+    padding-top: 10px;
+    border-top: solid 2px #545454;
+    width: 100%;
+    font-family: 'Assistant', sans-serif;
+    font-size: 28px;
+    font-weight: lighter;
+    color: white;
+}
+
+.devabt p {
+    font-family: 'Assistant', sans-serif;
+    text-align: left;
+    color: #FDF9FF;
+    font-size: 18px;
+    margin-top: 2px;
+}
+
+.devabt a {
+    text-decoration: none;
+    color: #EE87B3;
+}
+
+.devabt a:hover {
+    color: #FACBDF;
+    text-decoration: underline;
+}
+
+.footer {
+    border-top: solid 1px #545454;
+    background: #242424;
+    height: 90px;
+    width: 100%;
+    clear: both;
+}
+
+.footer p {
+    margin-top:4px;
+    text-align: center;
+    color: #9C9C9C;
+    font-family: 'Raleway', sans-serif;
+}
+
+.footer a {
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    color: #F9EFFF;
+    font-size: 13px;
+    transition: 0.15s;
+}
+
+.footer a:hover {
+    color: #EE87B3;
+    transition: 0.15s;
+}
+
+.footer img {
+    margin-top: 5px;
+    display: block;
+    width: 100px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.txt4 {
+    margin: 0;
+    padding: 0;
+    margin-top: 81px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 55px;
+    width: 90%;
+}
+
+.txt4 h1 {
+    margin-top: 20px;
+    font-weight: lighter;
+    font-size: 56px;
+    font-family: 'Comfortaa', sans-serif;
+    background: -webkit-linear-gradient(#D475D5, #FFD6E3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.txt4 p {
+    margin-top: 35px;
+    font-family: 'Assistant', sans-serif;
+    text-align: center;
+    color: #FDF9FF;
+    font-size: 25px;
+    line-height: 30px;
+}
+
+.txt4_1 {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.formy {
+    margin-top: 65px;
+    padding-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 715px;
+    background: #1B1B1B;
+    border: solid 1px #252525;
+    padding-bottom: 60px;
+    margin-bottom: 60px;
+}
+
+.formbox {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 83%;
+    font-family: 'Assistant', sans-serif;
+    color: black;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-top: 5px;
+}
+
+.txtbox {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 83%;
+    height: 200px;
+    padding-top: 0;
+    font-family: 'Assistant', sans-serif;
+    color: #030303;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-top: 5px;
+}
+
+.sendbox {
+    font-family: 'Assistant', sans-serif;
+    color: #030303;
+    font-weight: 600;
+    letter-spacing: 1px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    background-image: linear-gradient(to left, #D475D5, #FF7699);
+    border: 1px solid #212121;
+    width: 100px;
+    height: 50px;
+    font-size: 15px;
+    border-radius: 8px;
+}
+
+    .sendbox:hover {
+        background-image: linear-gradient(to left, #B093B0, #FFA9A9);
+    }
+
+.formy p {
+    text-align: center;
+    font-size: 18px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    color: #9C9C9C;
+    font-family: 'Raleway', sans-serif;
+}
+
+.formy1 {
+    margin-top: 10px;
+    padding-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    height: 350px;
+    background: #1B1B1B;
+    border: solid 1px #252525;
+}
+
+.formy2 {
+    margin-top: 10px;
+    padding-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 88%;
+    height: 160px;
+    background: #1B1B1B;
+    border: solid 1px #252525;
+}
+
+.formy2 img {
+        display:block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+.formy2 a {
+    font-family: 'Assistant', sans-serif;
+    text-decoration: none;
+    color: #EE87B3;
+}
+
+.formy2 a:hover {
+    color: #FACBDF;
+    text-decoration: underline;
+}
+
+.txt5 {
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    height: auto;
+}
+
+.txt5_1 {
+    float: left;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.txt5_1 img {
+    max-width: 70%;
+    height: auto;
+    padding-bottom: 30px;
+}
+
+.txt5_2 {
+    width: 60%;
+    float: right;
+}
+
+.txt5_2 h1 {
+    max-width: 100%;
+    margin-top: 8px;
+    font-family: 'Comfortaa', cursive;
+    font-size: 50px;
+    text-align: left;    
+    background: -webkit-linear-gradient(#D475D5, #FFD6E3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 3px;
+    font-weight: lighter;
+}
+
+.txt5_2 p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    text-align: left;
+    font-weight: lighter;
+    color: #F0F0F0;
+}
+
+.parallax p {
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 60%;
+    height: auto;
+    color: white;
+    font-family: 'Comfortaa', cursive;
+    letter-spacing: 7px;
+    font-size: 30px;
+    text-align: center;
+    background-color: rgba(52,52,52, 0.4);
+}
+
+.parallax2 {
+    clear: both;
+    background-image: url(../img/galaxy2.jpg);
+    height: 350px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.parallax3 {
+    clear: both;
+    background-image: url(../img/galaxy3.jpg);
+    height: 1000px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.parallax4 {
+    clear: both;
+    background-image: url(../img/sky.jpg);
+    height: 350px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.parallax5 {
+    clear: both;
+    background-image: url(../img/galaxy4.jpg);
+    height: 450px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.parallax6 {
+    clear: both;
+    background-image: url(../img/galaxy2.jpg);
+    height: 350px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.parallax6 p {
+	padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 60%;
+    height: auto;
+    color: white;
+    font-family: 'Comfortaa', cursive;
+    letter-spacing: 7px;
+    font-size: 30px;
+    text-align: center;
+    background-color: rgba(52,52,52, 0.4);
+}
+
+.menu.active {
+    animation: xis 0.2s alternate forwards;
+}
+
+@keyframes xis {
+    from {
+    }
+
+    to {
+        background-image: url(../img/close.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+.txt6 {
+    margin-left:auto;
+    margin-right:auto;
+    width: 95%;
+}
+
+.txt6 p {
+    margin-top: 35px;
+    font-family: 'Assistant', sans-serif;
+    text-align: left;
+    color: #FDF9FF;
+    font-size: 25px;
+    line-height: 30px;
+}
+
+.abaco {
+    height: 300px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border: solid 12px #FFD6E3;
+}
+
+.parallax7 {
+    clear: both;
+    background-image: url(../img/galaxy6.jpg);
+    height: 350px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:30px;
+}
+
+.parallax7 p {
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 60%;
+    height: auto;
+    color: white;
+    font-family: 'Comfortaa', cursive;
+    letter-spacing: 7px;
+    font-size: 30px;
+    text-align: center;
+    background-color: rgba(52,52,52, 0.4);
+}
+
+.txt7 {
+    margin-left:auto;
+    margin-right:auto;
+    width: 95%;
+}
+
+.txt7 p {
+    margin-top: 35px;
+    font-family: 'Assistant', sans-serif;
+    text-align: left;
+    color: #FDF9FF;
+    font-size: 25px;
+    line-height: 30px;
+}
+
+.txt7 h1 {
+    padding-top: 35px;
+    max-width: 100%;
+    margin-top: 8px;
+    font-family: 'Comfortaa', cursive;
+    font-size: 45px;
+    text-align: left;
+    background: -webkit-linear-gradient(#D475D5, #FFD6E3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 3px;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.eniac {
+    margin-top: 25px;
+    width: 600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+    border: solid 12px #FFD6E3;
+}
+
+.txt8 {
+    margin-left:auto;
+    margin-right:auto;
+    width: 95%;
+}
+
+.txt8 p {
+    margin-top: 35px;
+    font-family: 'Assistant', sans-serif;
+    text-align: left;
+    color: #FDF9FF;
+    font-size: 25px;
+    line-height: 30px;
+}
+
+.txt8 h1 {
+    padding-top: 35px;
+    max-width: 100%;
+    margin-top: 8px;
+    font-family: 'Comfortaa', cursive;
+    font-size: 45px;
+    text-align: left;
+    background: -webkit-linear-gradient(#D475D5, #FFD6E3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 3px;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.segunda {
+    margin-top: 25px;
+    height: 350px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+    border: solid 12px #FFD6E3;
+}
+
+.txt9 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+}
+
+.txt9 p {
+    margin-top: 35px;
+    font-family: 'Assistant', sans-serif;
+    text-align: left;
+    color: #FDF9FF;
+    font-size: 25px;
+    line-height: 30px;
+}
+
+.txt9 h1 {
+    padding-top: 35px;
+    max-width: 100%;
+    margin-top: 8px;
+    font-family: 'Comfortaa', cursive;
+    font-size: 45px;
+    text-align: left;
+    background: -webkit-linear-gradient(#D475D5, #FFD6E3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 3px;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.terceira {
+    margin-top: 25px;
+    height: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+    border: solid 12px #FFD6E3;
+}
+
+.txt10 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+}
+
+.txt10 p {
+    margin-top: 35px;
+    font-family: 'Assistant', sans-serif;
+    text-align: left;
+    color: #FDF9FF;
+    font-size: 25px;
+    line-height: 30px;
+}
+
+.txt10 h1 {
+    padding-top: 35px;
+    max-width: 100%;
+    margin-top: 8px;
+    font-family: 'Comfortaa', cursive;
+    font-size: 45px;
+    text-align: left;
+    background: -webkit-linear-gradient(#D475D5, #FFD6E3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 3px;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.quarta {
+    margin-top: 25px;
+    height: 340px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+    border: solid 12px #FFD6E3;
+}
+
+.parallax8 {
+    clear: both;
+    background-image: url(../img/galaxy7.jpg);
+    height: 350px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.parallax8 p {
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 60%;
+    height: auto;
+    color: white;
+    font-family: 'Comfortaa', cursive;
+    letter-spacing: 7px;
+    font-size: 30px;
+    text-align: center;
+    background-color: rgba(52,52,52, 0.4);
+}
+
+.txt11 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+}
+
+.txt11 p {
+    margin-top: 35px;
+    font-family: 'Assistant', sans-serif;
+    text-align: left;
+    color: #FDF9FF;
+    font-size: 25px;
+    line-height: 30px;
+}
+
+.txt11 h1 {
+    padding-top: 35px;
+    max-width: 100%;
+    margin-top: 8px;
+    font-family: 'Comfortaa', cursive;
+    font-size: 35px;
+    text-align: left;
+    background: -webkit-linear-gradient(#D475D5, #FFD6E3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 3px;
+    font-weight: lighter;
+    
+}
+
+.txt11 h2 {
+    padding-top: 35px;
+    max-width: 100%;
+    margin-top: 8px;
+    font-family: 'Comfortaa', cursive;
+    font-size: 45px;
+    text-align: left;
+    background: -webkit-linear-gradient(#D475D5, #FFD6E3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 3px;
+    font-weight: lighter;
+    text-align:center;
+}
+
+.txt12 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+}
+
+.txt12 h1 {
+    padding-top: 35px;
+    max-width: 100%;
+    margin-top: 8px;
+    font-family: 'Comfortaa', cursive;
+    font-size: 45px;
+    text-align: left;
+    background: -webkit-linear-gradient(#D475D5, #FFD6E3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 3px;
+    font-weight: lighter;
+    text-align:center;
+}
+
+.txt12 h2 {
+    padding-top: 35px;
+    max-width: 100%;
+    margin-top: 8px;
+    font-family: 'Comfortaa', cursive;
+    font-size: 35px;
+    text-align: left;
+    background: -webkit-linear-gradient(#D475D5, #FFD6E3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 3px;
+    font-weight: lighter;
+}
+
+.txt12 p {
+    margin-top: 35px;
+    font-family: 'Assistant', sans-serif;
+    text-align: left;
+    color: #FDF9FF;
+    font-size: 25px;
+    line-height: 30px;
+}
+
+.placa {
+    height: 300px;
+    border: solid 12px #FFD6E3;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+}
+
+.parallax9 {
+    clear: both;
+    background-image: url(../img/galaxy8.jpg);
+    height: 350px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.parallax9 p {
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 60%;
+    height: auto;
+    color: white;
+    font-family: 'Comfortaa', cursive;
+    letter-spacing: 7px;
+    font-size: 30px;
+    text-align: center;
+    background-color: rgba(52,52,52, 0.4);
+}   
+
+.parallax10 {
+    clear: both;
+    background-image: url(../img/galaxy9.jpg);
+    height: 350px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.parallax10 p {
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 60%;
+    height: auto;
+    color: white;
+    font-family: 'Comfortaa', cursive;
+    letter-spacing: 7px;
+    font-size: 30px;
+    text-align: center;
+    background-color: rgba(52,52,52, 0.4);
+}
+
+.parallax11 {
+    clear: both;
+    background-image: url(../img/galaxy10.jpg);
+    height: 350px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.parallax5 p {
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 60%;
+    height: auto;
+    color: white;
+    font-family: 'Comfortaa', cursive;
+    letter-spacing: 7px;
+    font-size: 30px;
+    text-align: center;
+    background-color: rgba(52,52,52, 0.6);
+}
+
+.parallax4 p {
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 60%;
+    height: auto;
+    color: white;
+    font-family: 'Comfortaa', cursive;
+    letter-spacing: 7px;
+    font-size: 30px;
+    text-align: center;
+    background-color: rgba(52,52,52, 0.6);
+}
+
+.parallax11 p {
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 60%;
+    height: auto;
+    color: white;
+    font-family: 'Comfortaa', cursive;
+    letter-spacing: 7px;
+    font-size: 30px;
+    text-align: center;
+    background-color: rgba(52,52,52, 0.4);
+}
+
+.windows {
+    height: 300px;
+    border: solid 12px #FFD6E3;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+}
+
+.txt11 a {
+    text-decoration: none;
+    color: #EE87B3;
+}
+
+.txt11 a:hover {
+    color: #FACBDF;
+    text-decoration: underline;
+}
+
+.txt12 a {
+    text-decoration: none;
+    color: #EE87B3;
+}
+
+.txt12 a:hover {
+    color: #FACBDF;
+    text-decoration: underline;
+}
+
+.topo {
+    float: right;
+    display: block;
+    height: 100px;
+    width: auto;
+}
+
+.parallax12 {
+    clear: both;
+    background-image: url(../img/galaxy11.jpg);
+    height: 350px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.parallax12 p {
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 60%;
+    height: auto;
+    color: white;
+    font-family: 'Comfortaa', cursive;
+    letter-spacing: 7px;
+    font-size: 30px;
+    text-align: center;
+    background-color: rgba(52,52,52, 0.6);
+}
+
+.parallax13 {
+    clear: both;
+    background-image: url(../img/galaxy12.jpg);
+    height: 350px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.parallax13 p {
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 60%;
+    height: auto;
+    color: white;
+    font-family: 'Comfortaa', cursive;
+    letter-spacing: 7px;
+    font-size: 30px;
+    text-align: center;
+    background-color: rgba(52,52,52, 0.6);
+}
+
+.parallax14 {
+    clear: both;
+    background-image: url(../img/galaxy13.png);
+    height: 350px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.parallax14 p {
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 60%;
+    height: auto;
+    color: white;
+    font-family: 'Comfortaa', cursive;
+    letter-spacing: 7px;
+    font-size: 30px;
+    text-align: center;
+    background-color: rgba(52,52,52, 0.6);
+}
+
+.parallax15 {
+    clear: both;
+    background-image: url(../img/galaxy14.jpg);
+    height: 350px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.parallax15 p {
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 60%;
+    height: auto;
+    color: white;
+    font-family: 'Comfortaa', cursive;
+    letter-spacing: 7px;
+    font-size: 30px;
+    text-align: center;
+    background-color: rgba(52,52,52, 0.6);
+}
+
+.parallax2 p {
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 60%;
+    height: auto;
+    color: white;
+    font-family: 'Comfortaa', cursive;
+    letter-spacing: 7px;
+    font-size: 30px;
+    text-align: center;
+    background-color: rgba(52,52,52, 0.4);
+}
+
+#men {
+    max-width: 100%;
+    margin-top: 8px;
+    font-family: 'Comfortaa', cursive;
+    font-size: 50px;
+    text-align: left;
+    background: -webkit-linear-gradient(#D475D5, #FFD6E3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 3px;
+    font-weight: lighter;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media only screen and (max-width:768px) {
+    .navitems {
+        display: none;
+    }
+
+    .logo {
+        position: absolute;
+        margin: auto;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+
+    .menu {
+        display: initial;
+    }
+
+    .main {
+        margin-top: 51px;
+    }
+
+    .txt0 {
+        height: 265px;
+    }
+
+    .txt0_1 {
+        height: 250px;
+    }
+
+    .txt0_1 h2, .txt5_2 h1, .txt6 h1, .txt7 h1, .txt8 h1, .txt9 h1, .txt10 h1, .txt11 h2, .txt12 h1, .txt3 h4, #men{
+        font-size: 35px;
+        line-height: 40px;
+    }
+
+    .txt11 h1 {
+        font-size: 30px;
+    }
+
+    .txt0_1 p, .txt6 p, .txt7 p, .txt8 p, .txt9 p, .txt10 p, .txt11 p, .txt12 p, .txt5_2 p {
+        font-size: 20px;
+        padding-bottom: 10px;
+        line-height: 25px;
+    }
+
+    .abaco, .eniac, .segunda, .terceira, .quarta, .placa, .windows {
+        height: 200px;
+        width: auto;
+    }
+
+    .txt1 {
+        margin-top: 15px;
+        line-height: 38px;
+        width: 95%;
+    }
+
+    .txt1 p {
+        font-size: 35px;
+        text-align: left;
+    }
+
+    .txt2 {
+        margin-top: 1px;
+        height: auto;
+    }
+
+    .txt2 p, .txt5_2 p {
+        font-size: 20px;
+    }
+
+    .txt2_1 {
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+        width: 100%;
+    }
+
+    .txt2_2 {
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+        width: 100%;
+    }
+
+    .txt3 {
+        width: 95%;
+    }
+
+    .txt3 h4 {
+        width: 100%;
+        text-align: left;
+        font-size: 35px;
+    }
+
+    .txt3 h3 {
+        margin-top: -25px;
+        font-size: 20px;
+    }
+
+    .dev {
+        width: 40%;
+    }
+
+    .devimg {
+        width: 185px;
+        height: 185px;
+    }
+
+    .devabt {
+        width: 40%;
+    }
+
+    .devabt p {
+        font-size: 20px;
+    }
+
+
+    .txt4_1 {
+        width: 90%;
+    }
+
+    .formy {
+        height: 735px;
+    }
+
+    .txt4 h1 {
+        font-size: 35px;
+        line-height: 36px;
+    }
+
+    .txt4 p {
+        font-size: 22px;
+    }
+
+    .formy1 {
+        width: 80%;
+    }
+
+    .formy2 {
+        height: 180px;
+        width: 80%;
+    }
+
+    .contdev a {
+        text-align: center;
+    }
+
+    .parallax5 p, .parallax4 p, .parallax2 p, .parallax p, .parallax6 p, .parallax7 p, .parallax8 p, .parallax9 p, .parallax10 p, .parallax11 p, .parallax12 p, .parallax13 p, .parallax14 p, .parallax15 p {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width:483px) {
+    .dev {
+        width: 100%;
+        float: none;
+        padding-bottom: 1.5px;
+    }
+
+    .devabt {
+        width: 100%;
+        float: none;
+    }
+}
+
+@media only screen and (max-width:648px) {
+    .txt0 {
+        height: auto;
+    }
+
+    .txt0_0 {
+        display: initial;
+    }
+
+    .txt0_1 {
+        width: 100%;
+        float: none;
+    }
+
+    .txt0_1 h2 {
+        text-align: center;
+    }
+
+    .txt0_2 {
+        display: none;
+        width: 100%;
+        float:none;
+    }
+
+    .txt0img {
+        margin-top: -75px;
+        width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+}
+
+@media only screen and (max-width:513px) {
+    .parallax p {
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width:450px) {
+    .parallax p {
+        font-size: 22px;
+    }
+}
+
+@media only screen and (max-width:415px) {
+    .parallax p {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width:436px) {
+    .txt0 {
+        padding-bottom: 30px;
+    }
+}
+
+
+@media only screen and (max-width:388px) {
+    .parallax p {
+        max-width: 80%;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width:305px) {
+    .txt2_2 h2 {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width:375px) {
+    .txt0_1 p, .txt2 p, .txt3 h3, .txt5_2 p, .txt4 p, .devabt p{
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .txt1 p, .txt0_1 h2, .txt3 h4, .txt4 h1, .devabt h2{
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    .txt0_1 {
+        height: 230px;
+    }
+
+    .txt0_1 h2 {
+        line-height: 37px;
+    }
+
+    .txt0 p {
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width:372px) {
+    .txt0 {
+        padding-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width:334px) {
+    .txt0 {
+        padding-bottom: 40px;
+    }
+
+    .parallax5 {
+        margin-top: 25px;
+    }
+}
+
+@media only screen and (max-width:319px) {
+    .txt0 {
+        padding-bottom: 40px;
+    }
+}
+
+@media only screen and (max-width:297px) {
+    .txt0 {
+        padding-bottom: 30px;
+    }
+}
+
+@media only screen and (max-width:286px) {
+    .txt0 {
+        padding-bottom: 50px;
+    }
+}
+
+@media only screen and (max-width:267px) {
+    .txt0 {
+        padding-bottom: 50px;
+    }
+}
+
+@media only screen and (max-width:256px) {
+    .txt0 {
+        padding-bottom: 70px;
+    }
+}
+
+@media only screen and (max-width:552px) {
+    .txt5_2 h1 {
+        font-size: 35px;
+        line-height: 35px;
+        text-align: center;
+    }
+
+    .txt5_2 p {
+        text-align: center;
+    }
+
+    .txt5_1 img {
+        height: 200px;
+        padding-bottom: 15px;
+    }
+
+    .txt5_2, .txt5_1 {
+        float: none;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:425px) {
+    .parallax5 p, .parallax4 p, .parallax2 p, .parallax p, .parallax6 p, .parallax7 p, .parallax8 p, .parallax9 p, .parallax10 p, .parallax11 p, .parallax12 p, .parallax13 p, .parallax14 p, .parallax15 p {
+        font-size: 15px;
+        letter-spacing: 5px;
+    }
+
+    .windows, .placa, .abaco, .eniac, .segunda, .terceira, .quarta {
+        width: 80%;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .txt11 h2, .txt12 h1 {
+        text-align: center;
+    }
+}
+
+
+@media only screen and (max-width:320px) {
+    .parallax5 {
+        margin-top: 45px;
+    }
+
+    .txt5_1 img {
+        width: 150px;
+        height: auto;
+    }
+}
+
+

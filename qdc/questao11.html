@@ -1,0 +1,94 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>QDC - Questão 11</title>
+
+    <link href="estilo/css.css" rel="stylesheet" type="text/css">
+
+    <link rel="icon" href="img/icon.png" />
+
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+
+    <script src="js/jquery.js"></script>
+
+    <script>
+
+        $(document).ready(function () {
+
+            $(".menucontainer").click(function () {
+                $(".linkcontainer").slideToggle(200);
+            })
+
+        })
+    </script>
+
+</head>
+
+<body>
+
+    <div class="menucontainer">
+        <img src="img/menu.png" class="menuimg" />
+    </div>
+
+    <div class="linkcontainer">
+        <a href="sobre.html" accesskey="Z"><div class="link"><p>Sobre</p></div></a>
+        <a href="feedback.html" accesskey="X"><div class="link"><p>Feedback</p></div></a>
+    </div>
+
+    <a href="home.html" accesskey="H">
+        <div class="homecontainer">
+            <img src="img/home.png" class="home" />
+        </div>
+    </a>
+
+    <div class="container">
+        <div class="numeroquestao2">
+            <h3>11</h3>
+        </div>
+
+        <div class="pergunta2">
+            <h4>
+                É um barramento serial, onde é
+                transmitido um único bit por vez em cada sentido (full-duplex). Isso
+                elimina os problemas de sincronização e interferência, permitindo que sejam usadas frequências mais
+                altas. Esta é a definição do padrão de barramento:
+            </h4>
+        </div>
+    </div>
+
+    <div class="container">
+        <a href="perdeu.html" accesskey="Q">
+            <div class="botaoalternativa1">
+                <h5>PATA</h5>
+            </div>
+        </a>
+
+
+
+        <a href="acertos/questao11/acertou11.html" accesskey="W">
+            <div class="botaoalternativa2">
+                <h5>SATA</h5>
+            </div>
+        </a>
+    </div>
+
+    <div class="container">
+        <a href="perdeu.html" accesskey="A">
+            <div class="botaoalternativa3">
+                <h5>IDE</h5>
+            </div>
+        </a>
+
+
+
+        <a href="perdeu.html" accesskey="S">
+            <div class="botaoalternativa4">
+                <h5>USB</h5>
+            </div>
+        </a>
+    </div>
+</body>
+</html>

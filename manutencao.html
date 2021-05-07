@@ -1,0 +1,181 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="img/icon.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed|Tauri" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Comfortaa|Raleway|Unica+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Assistant:200" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/stylesheet.css" />
+    <script src="js/jquery.js"></script>
+    <title>VOID - Manutenção</title>
+
+    <script>
+        $(document).ready(function(){
+            $(".menu").click(function () {
+                $(".maxnavitems").slideToggle(200);
+                $(".menu").toggleClass('active');
+            });
+
+            $(".pcitem").click(function () {
+                $(".pcmenu").toggle();
+                $(".pcitem").toggleClass('navsele');
+                $(".navitems img").toggleClass('activ')
+            });
+
+            $("#arrow").click(function () {
+                $(".pcmenu").slideToggle(200);
+                $(".pcitem").toggleClass('navsele');
+                $(".navitems img").toggleClass('activ');
+            });
+        })
+    </script>
+
+</head>
+<body class="bgc">
+
+    <div class="head">
+        <div class="menu"></div>
+        <div class="logo"><a href="home.html"><img src="img/logo.jpg" class="logoimg" /></a></div>
+
+        <!-- Max width false -->
+        <div class="navitems">
+            <a href="contato.html"><li>CONTATO</li></a>
+            <a href="sobre.html"><li>SOBRE NÓS</li></a>
+            <li id="arrow"><img src="img/arrow.png" /></li>
+            <div class="pccontain">
+                <li class="pcitem" id="navsel">COMPUTADORES</li>
+                <div class="pcmenu">
+                    <a href="historia.html"><li>HISTÓRIA</li></a>
+                    <a href="hardware.html"><li>HARDWARE</li></a>
+                    <a href="software.html"><li>SOFTWARE</li></a>
+                    <a href="manutencao.html"><li id="navsel">MANUTENÇÃO</li></a>
+                </div>
+            </div>
+            <a href="home.html"><li>INÍCIO</li></a>
+        </div>
+    </div>
+
+        <!--Max width true-->
+        <div class="maxnavitems">
+            <a href="home.html"><li>INÍCIO</li></a>
+            <p id="compli">COMPUTADORES</p>
+            <div class="pcmaxmenu">
+                <a href="historia.html"><li>HISTÓRIA</li></a>
+                <a href="hardware.html"><li>HARDWARE</li></a>
+                <a href="software.html"><li>SOFTWARE</li></a>
+                <a href="manutencao.html"><li id="navsel">MANUTENÇÃO</li></a>
+            </div>
+            <a href="sobre.html"><li>SOBRE NÓS</li></a>
+            <a href="contato.html"><li>CONTATO</li></a>
+        </div>
+
+        <a name="topomnt"></a>
+        <div class="main">
+            <div class="parallax12">
+                <p>MANUTENÇÃO</p>
+            </div>
+
+            <div class="txt11">
+                <h2>O QUE É?</h2>
+                <p>
+                    A manutenção relacionada a computadores é a ação, ou conjunto de ações, desencadeada visando solucionar um problema diagnosticado no computador,
+                    ou antever o problema por meio de análise de situações no funcionamento do computador, relacionado a <a href="software.html">software</a> e/ou <a href="hardware.html">hardware</a>.
+                    São dois os tipos de manutenção:
+                </p>
+
+                <h1>MANUTENÇÃO PREVENTIVA</h1>
+                <p>
+                    Chama-se manutenção preventiva a ação ocorrida com base na análise prévia do computador, de seu funcionamento e execução, relacionado ao computador e todos os periféricos, entendendo e aplicando-se ações que visem evitar que determinados erros (de software e/ou hardware) ocorram. <br /><br />Existem softwares que são utilizados na manutenção preventiva.
+                    Vale ressaltar que a manutenção preventiva é referência na utilização de softwares relacionados à segurança (ferramentas de segurança de servidores de rede, ferramentas e utilitários de sistema operacional, entre outros).
+                </p>
+
+                <h1>Firewall</h1>
+                <p>
+                    Assim como a metáfora por trás do nome sugere, firewall é uma barreira de proteção que ajuda a bloquear o acesso de conteúdo malicioso, mas sem impedir que os dados que precisam transitar continuem fluindo. Em inglês, “firewall” é o nome daquelas portas antichamas usadas nas passagens para as escadarias em prédios. <br /><br />
+                    Na informática, os firewalls são aplicativos ou equipamentos que ficam entre um link de comunicação e um computador, checando e filtrando todo o fluxo de dados. Esse tipo de solução serve tanto para aplicações empresariais quanto para domiciliar, protegendo não só a integridade dos dados na rede mas também a confidencialidade deles.<br /><br />
+                    Aplicações com a função de firewall já são parte integrante de qualquer sistema operacional moderno, garantindo a segurança do seu PC desde o momento em que ele é ligado pela primeira vez. Os firewalls trabalham usando regras de segurança, fazendo com que pacotes de dados que estejam dentro das regras sejam aprovados, enquanto todos os outros nunca chegam ao destino final. <br /><br />
+                    Outra medida muito usada são os filtros por portas e aplicativos. Com eles, o firewall pode determinar, exatamente, quais programas do seu computador podem ter acesso ao link de internet ou não. As portas de comunicação também podem ser controladas da mesma forma, permitindo que as portas mais “visadas” pelos malware sejam bloqueadas terminantemente.
+                </p>
+
+                <h1>Antivírus</h1>
+                <p>
+                    Antivírus é um software que detecta, impede e atua na remoção de programas de software maliciosos, os vírus. São programas usados para proteger e prevenir computadores e outros aparelhos de códigos ou vírus, a fim de dar mais segurança ao usuário. <br /><br />
+                    Vírus são pequenos programas desenvolvidos com o objetivo de causar algum dano ao usuário do computador. Por que alguém lança um vírus pela internet é uma das questões importantes. Pode ser simplesmente uma brincadeira sem-graça para apagar arquivos e alterar o sistema operacional do usuário infectado ou roubar informações sigilosas. <br /><br />
+                    Há muitos tipos de vírus, os mais conhecidos são os simples, que infectam programas e arquivos e são normalmente ativados quando o usuário clica em algum link de internet ou programa executável (aqueles de terminação .exe). Outro tipo é o cavalo de troia, também conhecido como trojan (trojan horse), que parece ser um programa útil, mas que na verdade é usado para roubar senhas. O terceiro tipo bastante conhecido é o worm, mais prejudicial que os outros vírus, pois consegue se multiplicar sozinho e ampliar a infecção para outros computadores via internet. <br /><br />
+                    O antivírus, contudo, possui vários métodos de identificação para impedir a entrada de vírus, incluindo atualização automática, escaneamento, quarentena e outros meios.
+                </p>
+
+                <h1>Limpeza de Hardware</h1>
+                <p>
+                    Com relação à hardware de computador, a manutenção preventiva é a limpeza dos componentes internos do computador e da <a href="hardware.html#placa">placa mãe</a>, removendo poeira e qualquer tipo de sujeira que possa afetar o funcionamento do hardware. A limpeza do micro deve ser realizada para evitar certos
+                    problemas como insetos e desgaste do equipamento. Não se deve esquecer de desligar o computador e tirá-lo da tomada antes de mexer com as peças!<br /><br />
+
+                    Quando você realiza a manutenção do seu PC, o mais importante é limpar os <a href="hardware.html#cooler">coolers</a> e seus dissipadores. Normalmente podem ser três: um no <a href="hardware.html#processador">processador</a>, um na <a href="hardware.html#pvideo">placa de vídeo</a> e um na <a href="hardware.html#fonte">fonte</a>. Se o seu <a href="hardware.html#gabinete">gabinete</a> for mais completo, talvez você tenha outros, além das saídas de ar.
+
+                    Para o processador e a placa e vídeo pode-se usar um cotonete para remover o excesso de poeira. É necessário ser paciente e cuidadoso com o manuseio das peças, principalmente com o <a href="hardware.html#hd">HD</a>, um componente bem sensível, além de essencial para o computador (com a sua perda, todos os arquivos do microcomputador são perdidos). Pode ser usado um pincel com cerdas macias. O cuidado pode ser menor, todavía, com um <a href="hardware.html#hd">SSD</a>, por ser todo eletrônico sem partes móveis. Vale lembrar que limpar o gabinete em si também é importante, pois ele também possui buracos pelos quais entra poeira. Recomenda-se o uso de um pano umedecido de detergente ou pasta branca (o mesmo para um mouse, também). O teclado deve ser limpo com um pincel grosso, o monitor deve ser limpo com lenços pouco umedecidos. As placas de um computador deve ser manuseadas com
+                    muito cuidado ao estar realizando uma limpeza, primeiramente utilizar um
+                    pincel grosso com cuidado para retirar o excesso de poeira, e os slots (entradas de conexão) da placa
+                    mãe devem ser limpos com uma escova de dente com álcool isopropílico.<br /><br />
+                    O ideal realmente é desmontar todas as peças do PC e limpá-las uma a uma, porém apenas se o usuário estiver confortável sobre desmontar e montar o micro. Mas só o cuidado de tirar o pó das pás do cooler e desobstruir as saídas de ar do gabinete já pode ser o suficiente para manter o computador em uma temperatura funcional.
+                </p>
+
+                <h1>MANUTENÇÃO CORRETIVA</h1>
+                <p>
+                    Chama-se manutenção corretiva a ação ocorrida com base na falha de execução (de hardware e/ou software) de computador, relacionado ao computador e todos os periféricos, aplicando-se ações que visem solucionar os erros encontrados. Erros de hardware ocasionam falhas diversas de execução em softwares.
+                </p>
+
+                <h1>Lentidão</h1>
+                <p>
+                    Os arquivos interdependentes que compõem cada programa tendem a se afastar um dos outros, se espalhando por todo o <a href="hardware.html#hd">disco rígido</a>. Isso impacta fortemente a velocidade de execução dos programas, e é um dos possíveis problemas de lentidão. É recomendado desfragmentar o disco com regularidade. No entanto, a fragmentação do mesmo vai depender muito da sua frequência de uso e do modo como você o utiliza.<br /><br />
+                    Outro problema comum de lentidão é pouca <a href="hardware.html#ram">memória RAM</a>. Quando a memória é baixa, tudo no computador sofre. Programas travam com frequência e o PC fica progressivamente mais lento. Neste caso, aumente a memória RAM do seu computador. Caso o seu PC seja muito antigo, talvez seja interessante trocar a <a href="hardware.html#placa">placa mãe</a> também, uma vez que sua placa de vídeo possa ser <a href="hardware.html#onb">on-board</a> e sobre ainda menos memória RAM para a execução de tarefas (neste caso também será necessário comprar uma placa aceleradora de vídeo). <br /><br />
+                    Para determinados programas, ter outros softwares redundantes instalados sobrecarrega o processamento de fundo do PC, levando a conflitos de sistema que empurram o computador a lentidão e instabilidade. Instale no seu computador apenas programas necessários, que você vai utilizar. Vez por outra faça uma limpeza no seu PC por desinstalar aqueles programas que não lhes são mais úteis, ou que você já não os utiliza por pelo menos seis meses. <br /><br />
+                    Arquivos de sistema vitais para as funções básicas do <a href="software.html#so">sistema operacional</a> ao longo do tempo se tornam fragmentados e dispersos, portanto o sistema operacional começa a apresentar instabilidade e trava constantemente. Eles não podem ser totalmente desfragmentados usando ferramentas tradicionais, mas a <a href="#formata">formatação</a> resolve esse problema. <br /><br />
+                    À medida que o ambiente de software do PC muda, os drivers vão ficando desatualizados, causando sérios riscos à estabilidade e ao desempenho da máquina. Outra dica é manter seus drivers sempre atualizados. Basta abrir o gerenciador de dispositivos do sistema operacional e verificar que drivers necessitam de uma atualização. Geralmente há uma opção de procurar por updates online, ainda no gerenciador. Caso não funcione, há programas auxiliares que verificam e mantêm os drivers atualizados.
+                </p>
+
+                <h1>Corrupção por Vírus</h1>
+                <p>Os programas maliciosos estão em constante desenvolvimento, e algumas vezes, mesmo com o auxílio do firewall e de um antivírus, seu computador ainda foi infectado por um vírus que ficou descontrolado e impossibilitou o uso do computador. Neste caso, <a href="#formata">formatação</a> do disco rígido é a solução.</p>
+
+                <h1>Ruídos</h1>
+                <p>
+                    Ruídos do computador são normalmente causados pelo disco rígido, que possui uma agulha de leitura (cabeça de leitura) que passa pelo disco para ler e gravar informações. O HD pode rangir na inicialização de um computador após uma queda súbita de energia, causando a esta agulha a parar involuntariamente, e neste caso, o ruído deve parar alguns minutos após a inicialização completa do micro. Se não parar, pode ser que o disco rígido tenha sido danificado. <br /><br />
+                    Problemas de ruídos causados por HDs podem ser resolvidos com a remoção do excesso de poeira dos mesmos ou até mesmo pela substituição por um <a href="hardware.html#hd">SSD</a> (eletrônico, sem partes móveis, e por isso sem ruídos).
+                </p>
+            </div>
+
+            <a name="formata"></a>
+            <div class="parallax13">
+                <p>FORMATAÇÃO</p>
+            </div>
+            <div class="txt11">
+                <h2>O QUE É?</h2>
+                <p>
+                    Formatar o HD nada mais é do que preparar o disco para receber novos arquivos.
+                </p>
+
+                <h1>Passo a Passo</h1>
+                <p>1. Se o computador já foi utilizado anteriormente, faça um backup dos seus arquivos pessoais em um HD externo, pen-drive ou outros.</p>
+                <p>2. É necessário ter os CDs de instalação de drivers das placas do microcomputador em mãos. Caso não os tenha, procure online de acordo com o modelo dos componentes de seu computador.</p>
+                <p>3. Insira o CD-ROM de instalação do <a href="software.html#so">sistema operacional</a>.</p>
+                <p>4. No boot, aparecerá uma mensagem pedindo para que você aperte qualquer tecla para começar a instalação. Caso não peça, será necessário alterar o drive primário (carregado primeiro) na <a href="software.html#bios">BIOS</a>.</p>
+                <p>5. O sistema carregará os arquivos necessários, aguarde.</p>
+                <p>6. Cada sistema operacional possui teclas de interação diferentes, siga-as. Primeiro delete qualquer partição existente, e em seguida crie uma nova (pode-se selecionar quando de armazenamento do HD deseja utilizar nesta mesma partição).</p>
+                <p>7. Após criar a nova partição, selecione-a para a instalação de seu sistema operacional, e em seguida escolha o <a href="software.html#sda">sistema de arquivos</a> que deseja utilizar (FAT32 ou NTFS). O computador pode ser reiniciado diversas vezes no processo.</p>
+                <p>8. Após a instalação for concluída, vêm os últimos passos: definir as configurações básicas e de usuário. Depois disso, o sistema operacional estará instalado corretamente.</p>
+            </div>
+
+            <br /><br />
+            <a href="#topomnt">
+                <img src="img/topo.png" class="topo" />
+            </a>
+            <div class="footer">
+                <img src="img/logof.jpg" />
+                <p>© Void Co. 2018, <a href="sobre.html">Sobre VOID</a> | <a href="Contato.html">Contato</a></p>
+            </div>
+        </div>
+</body>
+</html>
